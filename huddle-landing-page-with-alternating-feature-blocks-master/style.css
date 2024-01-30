@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* FONTES DE ESTILO */
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body a button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Variaveis de cor */
+
+:root {
+  --cor-primaria: hsl(322, 100%, 66%);
+  --ciano-claro: hsl(193, 100%, 96%);
+  --ciano-escuro: hsl(192, 100%, 9%);
+  --azul-cinzento: hsl(208, 11%, 55%);
+}
+
+/* conteúdo primario para resolução de background */
+.conteudo-primario {
+  background: var(--ciano-claro) url(./images/bg-hero-mobile.svg) no-repeat;
+  padding: 0 0 50px 0;
+}
+/* Cabeçalho */
+nav {
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li a img {
+  width: 150px;
+}
+
+nav ul li a button {
+  background: #ffffff;
+  color: #000000;
+  border: 0;
+  padding: 6px 15px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 1.2em;
+}
+/* Primeiro conteúdo */
+.primario {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.primario-box-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 44px 0;
+}
+
+.primario-box-content a {
+  text-decoration: none;
+}
+
+.primario-box-content a button {
+  color: #ffffff;
+  background: var(--cor-primaria);
+  padding: 8px 40px;
+  border: 0;
+  border-radius: 20px;
+}
+
+.img-primario img {
+  width: 300px;
+}
+/* AGRUPAMENTO DE CARD */
+.cards-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  gap: 50px;
+  padding: 70px 0 200px;
+}
+/* BOX CARD */
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+  padding: 40px;
+  gap: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 1.2em;
+  text-align: center;
+  border-radius: 15px;
+  transform: scale(0.9);
+}
+
+.card-content-text {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
+.card-content img {
+  width: 300px;
+}
+
+.card-content p {
+  font-weight: 400;
+}
+/* RODAPÉ */
+footer {
+  background: var(--ciano-escuro);
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 24px 10px;
+}
+/* ELEMENTO SOBREPOSTO DO RODAPÉ */
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column nowrap;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 0;
+  z-index: 1;
+  background: white;
+  border-radius: 20px;
+  padding: 40px 4%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 1em;
+  gap: 40px;
+}
+
+.alert h2 {
+  color: #000000;
+}
+
+.alert button {
+  background-color: var(--cor-primaria);
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  padding: 15px 40px;
+}
+
+.rodape {
+  margin: 120px 0 0 20px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.logo-rodape a img {
+  filter: saturate(0) invert();
+  margin: 24px 0;
+}
+
+.rodape-content {
+  width: 100%;
+}
+
+.rodape-content-info {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
+.rodape-content-info section {
+  display: flex;
+  height: min-content;
+  gap: 10px;
+}
+
+.rodape-content-info > :nth-child(2),
+:nth-child(3) {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 5px;
+  flex-flow: column wrap;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: max-content;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 24px 0;
+}
+
+.social a {
+  text-decoration: none;
+  color: white;
+  border: solid 1px white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 720px) {
+  .conteudo-primario {
+    background: url("./images/bg-hero-desktop.svg") cover;
+  }
+  .primario {
+    justify-content: space-around;
+  }
+
+  .cards-text > :nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  .card-content {
+    justify-content: none;
+    align-items: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+  }
+
+  .card-content-text {
+    text-align: left;
+    gap: 10px;
+  }
+
+  footer {
+    padding: 60px 10px 60px 10px;
+  }
+
+  .rodape {
+    padding: 60px;
+  }
+
+  .rodape-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .links {
+    display: flex;
+    gap: 30px;
+    flex-flow: row wrap;
+  }
+
+  .links a {
+    display: inline;
+    width: none;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+  }
+  .social {
+    width: fit-content;
+    align-items: flex-start;
+  }
+
+  .copyright {
+    width: fit-content;
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+  }
+}
